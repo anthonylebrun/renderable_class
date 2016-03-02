@@ -27,7 +27,7 @@ module Renderable
   private
 
   def method_values_mapping(methods)
-    Hash[methods.map{|sym| [sym, send(sym)] }]
+    Hash[methods.map{ |sym| [sym, send(sym)] }]
   end
 
   def get_binding(instance)
